@@ -1,0 +1,10 @@
+class CreateRoomsTable < ActiveRecord::Migration
+  def change
+  	  	create_table :user_rooms do |t|
+  		t.integer :user_id
+  		t.integer :room_numb
+  		t.string :room_name
+  		t.string :room_location
+  	end
+  end
+end
